@@ -50,7 +50,14 @@ function printTime() {
         secs = "0" + secs;
     }
 
-    month = month + 1;
+    //month = month + 1;
+
+    var monthName = ['January', "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    if (month < 12) {
+
+        month = monthName[month];
+    }
     document.getElementById("test").innerHTML = hours + ":" + mins + ":" + secs;
     document.getElementById("ttt").innerHTML = day + ", " + date + "." + month + "." + year;
 }

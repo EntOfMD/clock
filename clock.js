@@ -58,7 +58,7 @@ function printTime() {
 
         month = monthName[month];
     }
-    document.getElementById("test").innerHTML = hours + ":" + mins + ":" + secs;
-    document.getElementById("ttt").innerHTML = day + ", " + date + "." + month + "." + year;
+    document.getElementById("time").innerHTML = hours + ":" + mins + ":" + secs;
+    document.getElementById("date").innerHTML = day + ", " + date + "." + month + "." + year;
 }
 setInterval(printTime, 1000);
